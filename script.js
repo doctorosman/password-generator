@@ -67,4 +67,5 @@ if (userLang != 'tr') {
     document.querySelector('label[for=lowercase]').innerHTML = 'Include Lowercase Characters';
     document.querySelector('label[for=num]').innerHTML = 'Include Numbers';
     document.querySelector('label[for=spec]').innerHTML = 'Include Special Characters';
+    document.getElementById('refresh').innerHTML = 'Generate';
 }
