@@ -1,5 +1,3 @@
-const userLang = navigator.language || navigator.userLanguage; 
-
 let pass = document.querySelector('.password'),
     lenText = document.getElementById('lentext'),
     len = document.getElementById('len'),
@@ -60,12 +58,3 @@ len.value = 16
 updateLen(len.value);
 
 pass.innerHTML = generate(16);
-
-if (userLang != 'tr') {
-    document.querySelector('label[for=len]').innerHTML = 'Password Length';
-    document.querySelector('label[for=uppercase]').innerHTML = 'Include Uppercase Characters';
-    document.querySelector('label[for=lowercase]').innerHTML = 'Include Lowercase Characters';
-    document.querySelector('label[for=num]').innerHTML = 'Include Numbers';
-    document.querySelector('label[for=spec]').innerHTML = 'Include Special Characters';
-    document.getElementById('refresh').innerHTML = 'Generate';
-}

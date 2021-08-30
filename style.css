@@ -4,12 +4,16 @@
     .password {
       font-size: 72px;
     }
+
+    .buttons div { display: inline; }
 }
   
 @media screen and (max-width: 600px) {
     .password {
       font-size: 36px;
     }
+
+    .buttons div { display: block; }
 }
 
 body { background: #f5f5f5 }
@@ -34,16 +38,22 @@ body { background: #f5f5f5 }
 .form {
     background: white;
     padding: 20px;
-    width: 40rem;
-    margin: 70px auto;
+    margin: 70px auto 20px auto;
 }
 
 #lentext {
     text-align: center;
     font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .lang {
     margin: 20px 0;
+    text-align: center;
+}
+
+.form button { margin-top: 20px; }
+
+.buttons {
     text-align: center;
 }
